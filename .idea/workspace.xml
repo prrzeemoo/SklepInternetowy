@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa14cabd-4a86-4288-9235-44de4e40c383" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/login.php" afterPath="$PROJECT_DIR$/admin/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/AdminLogin.php" afterPath="$PROJECT_DIR$/classes/AdminLogin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Database.php" afterPath="$PROJECT_DIR$/lib/Database.php" />
-    </list>
+    <list default="true" id="fa14cabd-4a86-4288-9235-44de4e40c383" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +15,8 @@
       <file leaf-file-name="AdminLogin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/classes/AdminLogin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="44" column="48" lean-forward="true" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
+            <state relative-caret-position="673">
+              <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
               <folding>
                 <marker date="1499629119419" expanded="true" signature="931:954" ph="SELECT * FRO... tbl_admin" />
                 <marker date="1499629119419" expanded="true" signature="931:985" ph="SELECT * FRO... tbl_admin" />
@@ -360,7 +355,7 @@
       <option name="presentableId" value="Default" />
       <updated>1499608827896</updated>
       <workItem from="1499608829494" duration="363000" />
-      <workItem from="1499609232807" duration="17596000" />
+      <workItem from="1499609232807" duration="18242000" />
     </task>
     <task id="LOCAL-00001" summary="pierwszy commit">
       <created>1499609980153</created>
@@ -373,7 +368,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17959000" />
+    <option name="totallyTimeSpent" value="18605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -590,8 +585,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/AdminLogin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="44" column="48" lean-forward="true" selection-start-line="44" selection-start-column="48" selection-end-line="44" selection-end-column="48" />
+        <state relative-caret-position="673">
+          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
           <folding>
             <marker date="1499629119419" expanded="true" signature="931:954" ph="SELECT * FRO... tbl_admin" />
             <marker date="1499629119419" expanded="true" signature="931:985" ph="SELECT * FRO... tbl_admin" />
