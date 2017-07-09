@@ -1,5 +1,7 @@
 <?php
 
+require_once '../config/config.php';
+
 /**
  * Created by PhpStorm.
  * User: Przemo

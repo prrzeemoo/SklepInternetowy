@@ -1,6 +1,6 @@
-<?php include '../classes/AdminLogin.php'; ?>
-
 <?php
+
+require_once '../classes/AdminLogin.php';
 
     $al = new AdminLogin();
 
