@@ -1,7 +1,7 @@
 <?php
 
-//require_once '../lib/Session.php';
-//Session::checkSession();
+require_once '../lib/Session.php';
+Session::checkLogin();
 require_once '../lib/Database.php';
 require_once '../helpers/Format.php';
 
@@ -32,7 +32,7 @@ class AdminLogin {
 
         if (empty($adminUser) || empty($adminPass)) {
 
-            $loginmsg = "Użytkownik lub Hasło nie może pozostać nieuzupełnione!";
+            $loginmsg = "LOGIN lub HASŁO nie może pozostać nieuzupełnione!";
             return $loginmsg;
         } else {
 
@@ -43,8 +43,17 @@ class AdminLogin {
             if ($result != false) {
 
                 $value = $result->fetch_assoc();
+                Session::set("adminlogin", true);
+                Session::set("adminId", $value['adminId']);
+                Session::set("adminUser", $value['adminUser']);
+                Session::set("adminName", $value['adminName']);
+                header("Location:dashbord.php");
+
+            } else {
+
+                $loginmsg = "Podałeś nieprawidłowy LOGIN lub HASŁO!";
+                return $loginmsg;
             }
         }
     }
-
 }
