@@ -33,7 +33,7 @@ class Category {
             return $msg;
         } else {
 
-            echo $query = "INSERT INTO `tbl_category` (`catName`) VALUES ('$catName')";
+            $query = "INSERT INTO `tbl_category` (`catName`) VALUES ('$catName')";
             $catInsert = $this->db->insert($query);
 
             if ($catInsert) {
@@ -46,5 +46,12 @@ class Category {
                 return $msg;
             }
         }
+    }
+
+    public function getAllCat() {
+
+        $query = "SELECT * FROM tbl_category ORDER BY catId DESC";
+        $result = $this->db->select($query);
+        return $result;
     }
 }
