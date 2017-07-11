@@ -20,22 +20,25 @@ $cat = new Category();
                 <tbody>
                 <?php
 
-                    $getCat = $cat->getAllCat();
+                $getCat = $cat->getAllCat();
 
-                    $i = 0;
+                $i = 0;
 
-                    if ($getCat) {
+                if ($getCat) {
 
-                        while ($result = $getCat->fetch_assoc()) {
+                    while ($result = $getCat->fetch_assoc()) {
 
-                            $i++;
-                ?>
-                <tr class="odd gradeX">
-                    <td><?php echo $i; ?></td>
-                    <td><?php echo $result['catName']; ?></td>
-                    <td><a href="catedit.php?catid=<?php echo $result['catId']; ?>">Edit</a> || <a onclick="return confirm('Czy na pewno chcesz usunac te kategorie?')" href="">Delete</a></td>
-                </tr>
-                <?php } } ?>
+                        $i++;
+                        ?>
+                        <tr class="odd gradeX">
+                            <td><?php echo $i; ?></td>
+                            <td><?php echo $result['catName']; ?></td>
+                            <td><a href="catedit.php?catid=<?php echo $result['catId']; ?>">Edit</a> || <a
+                                        onclick="return confirm('Czy na pewno chcesz usunąć tę kategorię?')" href="">Delete</a>
+                            </td>
+                        </tr>
+                    <?php }
+                } ?>
                 </tbody>
             </table>
         </div>

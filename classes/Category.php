@@ -8,7 +8,8 @@ require_once '../helpers/Format.php';
  * Date: 2017-07-11
  * Time: 19:47
  */
-class Category {
+class Category
+{
 
     private $db;
     private $fm;
@@ -16,13 +17,15 @@ class Category {
     /**
      * Category constructor.
      */
-    public function __construct() {
+    public function __construct()
+    {
 
         $this->db = new Database();
         $this->fm = new Format();
     }
 
-    public function catInsert($catName) {
+    public function catInsert($catName)
+    {
 
         $catName = $this->fm->validation($catName);
         $catName = mysqli_real_escape_string($this->db->link, $catName);
@@ -31,6 +34,7 @@ class Category {
 
             $msg = "<span class='error'>Wpisz nazwę KATEGORII produktu, którą chcesz dodać!</span>";
             return $msg;
+
         } else {
 
             $query = "INSERT INTO `tbl_category` (`catName`) VALUES ('$catName')";
@@ -38,20 +42,61 @@ class Category {
 
             if ($catInsert) {
 
-                $msg = "<span class='success'>Kategoria produktu zostala dodana!</span>";
+                $msg = "<span class='success'>Kategoria produktu została dodana!</span>";
                 return $msg;
+
             } else {
 
-                $msg = "<span class='error'>Kategoria produktu nie zostala dodana!</span>";
+                $msg = "<span class='error'>Kategoria produktu nie została dodana!</span>";
                 return $msg;
             }
         }
     }
 
-    public function getAllCat() {
+    public function getAllCat()
+    {
 
         $query = "SELECT * FROM tbl_category ORDER BY catId DESC";
         $result = $this->db->select($query);
         return $result;
     }
+
+    public function getCatById($id)
+    {
+
+        $query = "SELECT * FROM tbl_category WHERE catId = '$id'";
+        $result = $this->db->update($query);
+        return $result;
+    }
+
+    public function catUpdate($catName, $id)
+    {
+
+        $catName = $this->fm->validation($catName);
+        $catName = mysqli_real_escape_string($this->db->link, $catName);
+        $id = mysqli_real_escape_string($this->db->link, $id);
+
+        if (empty($catName)) {
+
+            $msg = "<span class='error'>Uzupenij pole tekstowe!</span>";
+            return $msg;
+
+        } else {
+
+            $query = "UPDATE tbl_category SET catName = '$catName' WHERE catId = '$id'";
+            $updated_row = $this->db->update($query);
+
+            if ($updated_row) {
+
+                $msg = "<span class='success'>Kategoria produktu została zaktualizowana!</span>";
+                return $msg;
+
+            } else {
+
+                $msg = "<span class='error'>Kategoria produktu nie została zaktualizowana!</span>";
+                return $msg;
+            }
+        }
+    }
+
 }

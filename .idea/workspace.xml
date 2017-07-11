@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa14cabd-4a86-4288-9235-44de4e40c383" name="Default" comment="pierwszy commit">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/admin/catedit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/catadd.php" afterPath="$PROJECT_DIR$/admin/catadd.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/catlist.php" afterPath="$PROJECT_DIR$/admin/catlist.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/Category.php" afterPath="$PROJECT_DIR$/classes/Category.php" />
     </list>
@@ -16,23 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AdminLogin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/AdminLogin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="38" column="35" lean-forward="true" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
-              <folding>
-                <marker date="1499792673974" expanded="true" signature="920:1003" ph="SELECT * FRO... tbl_admin" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="catlist.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/catlist.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -41,11 +31,27 @@
       <file leaf-file-name="Category.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/Category.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="50" column="20" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+            <state relative-caret-position="190">
+              <caret line="63" column="23" lean-forward="false" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
               <folding>
-                <marker date="1499802021950" expanded="true" signature="743:801" ph="INSERT INTO tbl_category... " />
-                <marker date="1499802021950" expanded="true" signature="1234:1280" ph="SELECT * FRO... tbl_category" />
+                <marker date="1499812148850" expanded="true" signature="752:810" ph="INSERT INTO tbl_category... " />
+                <marker date="1499812148850" expanded="true" signature="1248:1294" ph="SELECT * FRO... tbl_category" />
+                <marker date="1499812148850" expanded="true" signature="1434:1480" ph="SELECT * FRO... tbl_category" />
+                <marker date="1499812148850" expanded="true" signature="1971:2015" ph="UPDATE tbl_c... " />
+                <marker date="1499812148850" expanded="true" signature="1971:2035" ph="UPDATE tbl_c... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="catedit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/catedit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="693">
+              <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+              <folding>
+                <marker date="1499812348648" expanded="true" signature="1333:1427" ph="..." />
+                <marker date="1499812348648" expanded="true" signature="1374:1427" ph="..." />
               </folding>
             </state>
           </provider>
@@ -84,7 +90,11 @@
       <find>Location:dashbord.php</find>
       <find>dashbord</find>
       <find>dashbord.php</find>
+      <find>catId</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -124,8 +134,9 @@
         <option value="$PROJECT_DIR$/admin/inc/header.php" />
         <option value="$PROJECT_DIR$/admin/css/layout.css" />
         <option value="$PROJECT_DIR$/admin/catadd.php" />
-        <option value="$PROJECT_DIR$/classes/Category.php" />
         <option value="$PROJECT_DIR$/admin/catlist.php" />
+        <option value="$PROJECT_DIR$/classes/Category.php" />
+        <option value="$PROJECT_DIR$/admin/catedit.php" />
       </list>
     </option>
   </component>
@@ -404,7 +415,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
@@ -507,7 +518,7 @@
       <workItem from="1499608829494" duration="363000" />
       <workItem from="1499609232807" duration="18242000" />
       <workItem from="1499705776435" duration="4451000" />
-      <workItem from="1499791436798" duration="10481000" />
+      <workItem from="1499791436798" duration="17688000" />
     </task>
     <task id="LOCAL-00001" summary="pierwszy commit">
       <created>1499609980153</created>
@@ -520,7 +531,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33556000" />
+    <option name="totallyTimeSpent" value="40763000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -587,14 +598,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/details.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -912,22 +915,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/mysqli/mysqli.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="2103" column="9" lean-forward="false" selection-start-line="2103" selection-start-column="9" selection-end-line="2103" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/catadd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -952,16 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/AdminLogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="38" column="35" lean-forward="true" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
-          <folding>
-            <marker date="1499792673974" expanded="true" signature="920:1003" ph="SELECT * FRO... tbl_admin" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helpers/Format.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
@@ -978,21 +955,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/classes/AdminLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="38" column="35" lean-forward="true" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+          <folding>
+            <marker date="1499792673974" expanded="true" signature="920:1003" ph="SELECT * FRO... tbl_admin" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/mysqli/mysqli.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="2103" column="9" lean-forward="false" selection-start-line="2103" selection-start-column="9" selection-end-line="2103" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/catadd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-188">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/catedit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="33" column="32" lean-forward="false" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+          <folding>
+            <marker date="1499812348648" expanded="true" signature="1333:1427" ph="..." />
+            <marker date="1499812348648" expanded="true" signature="1374:1427" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/classes/Category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="50" column="20" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+        <state relative-caret-position="190">
+          <caret line="63" column="23" lean-forward="false" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
           <folding>
-            <marker date="1499802021950" expanded="true" signature="743:801" ph="INSERT INTO tbl_category... " />
-            <marker date="1499802021950" expanded="true" signature="1234:1280" ph="SELECT * FRO... tbl_category" />
+            <marker date="1499812148850" expanded="true" signature="752:810" ph="INSERT INTO tbl_category... " />
+            <marker date="1499812148850" expanded="true" signature="1248:1294" ph="SELECT * FRO... tbl_category" />
+            <marker date="1499812148850" expanded="true" signature="1434:1480" ph="SELECT * FRO... tbl_category" />
+            <marker date="1499812148850" expanded="true" signature="1971:2015" ph="UPDATE tbl_c... " />
+            <marker date="1499812148850" expanded="true" signature="1971:2035" ph="UPDATE tbl_c... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/catlist.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
