@@ -541,7 +541,7 @@ label.error
 
 .stat-col{float:left; margin:0px; margin-right:30px;}
 .stat-col span{font-weight:bold; font-size:1.1em; font-family:Helvetica Neue, Arial;}
-.stat-col p{font-family:Helvetica Neue, Arial; font-size:3em; color:#fff; font-weight:bold; text-shadow: 1px 1px 0px rgba(27, 27, 27, 0.4);; filter: dropshadow(color=#1b1b1b, offx=1, offy=1) /* IE */
+.stat-col p{font-family:Helvetica Neue, Arial; font-size:3em; color:#fff; font-weight:bold; text-shadow: 1px 1px 0px rgba(27, 27, 27, 0.4);; filter: dropshadow(color=#1b1b1b, offx=1, offy=1); /* IE */
 	  -moz-border-radius: 4px; /* Firefox */
 	  -webkit-border-radius: 4px; /* Safari, Chrome */
 	  border-radius: 4px; /* CSS3 */
@@ -942,7 +942,9 @@ td.details {
 	
 
 /* Fix the button in IE7 :-( */
-*+html .btn, *+html .btn-icon { border-color: none ; border: 1px solid transparent; }
+*+html .btn, *+html .btn-icon {
+	border: 1px solid transparent;
+}
 
 
 
@@ -1159,3 +1161,15 @@ td.details {
 
 .gallery-sand .sorting{background-color:white !important;}
 table.form select{width:200px;}
+
+.success {
+
+	font-size: 18px;
+	color: green;
+}
+
+.success {
+
+	font-size: 18px;
+	color: red;
+}
