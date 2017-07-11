@@ -1,7 +1,7 @@
-﻿<?php include 'inc/header.php'; ?>
-<?php include 'inc/sidebar.php'; ?>
-<?php require_once '../classes/Category.php'; ?>
-<?php
+﻿<?php
+include 'inc/header.php';
+include 'inc/sidebar.php';
+require_once '../classes/Category.php';
 
 $cat = new Category();
 
@@ -17,10 +17,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="block copyblock">
                 <?php
 
-                    if (isset($insertCat)) {
+                if (isset($insertCat)) {
 
-                        echo $insertCat;
-                    }
+                    echo $insertCat;
+                }
                 ?>
                 <form action="catadd.php" method="post">
                     <table class="form">
