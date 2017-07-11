@@ -47,7 +47,7 @@ class Session {
     public static function checkLogin() {
         self::init();
         if (self::get("adminlogin") == true) {
-            header("Location:login.php");
+            header("Location:dashbord.php");
         }
     }
 
