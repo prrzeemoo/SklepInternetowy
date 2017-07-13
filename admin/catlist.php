@@ -4,11 +4,26 @@ include 'inc/sidebar.php';
 require_once '../classes/Category.php';
 
 $cat = new Category();
+
+if (isset($_GET['delcat'])) {
+
+    $id = $_GET['delcat'];
+    $delCat = $cat->delCatById($id);
+}
 ?>
+
 <div class="grid_10">
     <div class="box round first grid">
         <h2>Category List</h2>
         <div class="block">
+
+            <?php
+
+                if (isset($delCat)) {
+
+                    echo $delCat;
+                }
+            ?>
             <table class="data display datatable" id="example">
                 <thead>
                 <tr>
@@ -34,7 +49,8 @@ $cat = new Category();
                             <td><?php echo $i; ?></td>
                             <td><?php echo $result['catName']; ?></td>
                             <td><a href="catedit.php?catid=<?php echo $result['catId']; ?>">Edit</a> || <a
-                                        onclick="return confirm('Czy na pewno chcesz usunąć tę kategorię?')" href="">Delete</a>
+                                        onclick="return confirm('Czy na pewno chcesz usunąć tę kategorię?')"
+                                        href="?delcat=<?php echo $result['catId']; ?>">Delete</a>
                             </td>
                         </tr>
                     <?php }
@@ -44,13 +60,15 @@ $cat = new Category();
         </div>
     </div>
 </div>
-<script type="text/javascript">
+<script type="text / javascript">
     $(document).ready(function () {
         setupLeftMenu();
 
         $('.datatable').dataTable();
         setSidebarHeight();
     });
+
+
 </script>
 <?php include 'inc/footer.php'; ?>
 

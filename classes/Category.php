@@ -83,7 +83,10 @@ class Category
 
         } else {
 
-            $query = "UPDATE tbl_category SET catName = '$catName' WHERE catId = '$id'";
+            $query = "UPDATE tbl_category 
+                      SET 
+                      catName = '$catName' 
+                      WHERE catId = '$id'";
             $updated_row = $this->db->update($query);
 
             if ($updated_row) {
@@ -99,4 +102,19 @@ class Category
         }
     }
 
+    public function delCatById($id) {
+
+        $query = "DELETE FROM tbl_category WHERE catId = '$id'";
+        $delete_row = $this->db->delete($query);
+
+        if ($delete_row) {
+
+            $msg = "<span class='success'>KATEGORIA została usunięta!</span>";
+            return $msg;
+        } else {
+
+            $msg = "<span class='error'>KATEGORIA nie została usunięta!</span>";
+            return $msg;
+        }
+    }
 }
