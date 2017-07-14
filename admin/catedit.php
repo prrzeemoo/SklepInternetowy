@@ -5,11 +5,11 @@ require_once '../classes/Category.php';
 
 if (!isset($_GET['catid']) OR $_GET['catid'] == NULL) {
 
-    echo "<script>window.location = 'catlist.php'</script>";
+    echo "<script>window.location = 'catlist.php'; </script>";
 
 } else {
 
-    $id = $_GET['catid'];
+    $id = preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET['catid']);
 }
 
 $cat = new Category();

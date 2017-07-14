@@ -8,6 +8,7 @@ $cat = new Category();
 if (isset($_GET['delcat'])) {
 
     $id = $_GET['delcat'];
+    $id = preg_replace('/[^-a-zA-Z0-9_]/', '', $_GET['delcat']);
     $delCat = $cat->delCatById($id);
 }
 ?>
@@ -21,8 +22,8 @@ if (isset($_GET['delcat'])) {
 
                 if (isset($delCat)) {
 
-                    echo $delCat;
-                }
+                echo $delCat;
+            }
             ?>
             <table class="data display datatable" id="example">
                 <thead>
