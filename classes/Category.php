@@ -8,8 +8,7 @@ require_once '../helpers/Format.php';
  * Date: 2017-07-11
  * Time: 19:47
  */
-class Category
-{
+class Category {
 
     private $db;
     private $fm;
@@ -17,15 +16,13 @@ class Category
     /**
      * Category constructor.
      */
-    public function __construct()
-    {
+    public function __construct() {
 
         $this->db = new Database();
         $this->fm = new Format();
     }
 
-    public function catInsert($catName)
-    {
+    public function catInsert($catName) {
 
         $catName = $this->fm->validation($catName);
         $catName = mysqli_real_escape_string($this->db->link, $catName);
@@ -53,8 +50,7 @@ class Category
         }
     }
 
-    public function getAllCat()
-    {
+    public function getAllCat() {
 
         $query = "SELECT * FROM tbl_category ORDER BY catId DESC";
         $result = $this->db->select($query);
@@ -69,8 +65,7 @@ class Category
         return $result;
     }
 
-    public function catUpdate($catName, $id)
-    {
+    public function catUpdate($catName, $id) {
 
         $catName = $this->fm->validation($catName);
         $catName = mysqli_real_escape_string($this->db->link, $catName);
