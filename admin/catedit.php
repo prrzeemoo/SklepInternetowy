@@ -26,12 +26,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="block copyblock">
                 <?php
 
-                if (isset($updateCat)) {
+                    if (isset($updateCat)) {
 
                     echo $updateCat;
-                }
+                    }
 
-                $getCat = $cat->getCatById($id);
+                    $getCat = $cat->getCatById($id);
 
                 if ($getCat) {
 
