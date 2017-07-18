@@ -23,23 +23,22 @@ class Product {
         $this->fm = new Format();
     }
 
-    public function productInsert($data, $file)
-    {
+    public function productInsert($data, $file) {
 
         $productName = mysqli_real_escape_string($this->db->link, $data['productName']);
-        $catId = mysqli_real_escape_string($this->db->link, $data['catId']);
-        $brandId = mysqli_real_escape_string($this->db->link, $data['brandId']);
-        $body = mysqli_real_escape_string($this->db->link, $data['body']);
-        $price = mysqli_real_escape_string($this->db->link, $data['price']);
-        $type = mysqli_real_escape_string($this->db->link, $data['type']);
+        $catId       = mysqli_real_escape_string($this->db->link, $data['catId']);
+        $brandId     = mysqli_real_escape_string($this->db->link, $data['brandId']);
+        $body        = mysqli_real_escape_string($this->db->link, $data['body']);
+        $price       = mysqli_real_escape_string($this->db->link, $data['price']);
+        $type        = mysqli_real_escape_string($this->db->link, $data['type']);
 
         $dozwolone_rozszerzenia_plikow_graficznych = array('jpg', 'jpeg', 'png', 'gif');
         $file_name = $file['image']['name'];
         $file_size = $file['image']['size'];
         $file_temp = $file['image']['tmp_name'];
 
-        $div = explode('.', $file_name);
-        $file_ext = strtolower(end($div));
+        $div          = explode('.', $file_name);
+        $file_ext     = strtolower(end($div));
         $unique_image = substr(md5(time()), 0, 10) . '.' . $file_ext;
         $upload_image = "upload/" . $unique_image;
 

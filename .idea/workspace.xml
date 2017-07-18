@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa14cabd-4a86-4288-9235-44de4e40c383" name="Default" comment="pierwszy commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/classes/Product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/admin/productadd.php" afterPath="$PROJECT_DIR$/admin/productadd.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/upload/4b22009158.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/upload/d1f448235a.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classes/Product.php" afterPath="$PROJECT_DIR$/classes/Product.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,11 +38,11 @@
       <file leaf-file-name="Product.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/Product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+            <state relative-caret-position="295">
+              <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
               <folding>
                 <element signature="e#6#88#0#PHP" expanded="true" />
-                <marker date="1500397421777" expanded="true" signature="2082:2274" ph="INSERT INTO tbl_product... " />
+                <marker date="1500399235122" expanded="true" signature="2121:2313" ph="INSERT INTO tbl_product... " />
               </folding>
             </state>
           </provider>
@@ -132,8 +132,8 @@
         <option value="$PROJECT_DIR$/classes/Brand.php" />
         <option value="$PROJECT_DIR$/admin/brandlist.php" />
         <option value="$PROJECT_DIR$/admin/brandedit.php" />
-        <option value="$PROJECT_DIR$/classes/Product.php" />
         <option value="$PROJECT_DIR$/admin/productadd.php" />
+        <option value="$PROJECT_DIR$/classes/Product.php" />
       </list>
     </option>
   </component>
@@ -515,7 +515,7 @@
       <workItem from="1499975644875" duration="2427000" />
       <workItem from="1500049149891" duration="3596000" />
       <workItem from="1500304302917" duration="7946000" />
-      <workItem from="1500389580464" duration="7904000" />
+      <workItem from="1500389580464" duration="8243000" />
     </task>
     <task id="LOCAL-00001" summary="pierwszy commit">
       <created>1499609980153</created>
@@ -528,7 +528,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64529000" />
+    <option name="totallyTimeSpent" value="64868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -973,11 +973,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classes/Product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        <state relative-caret-position="295">
+          <caret line="39" column="22" lean-forward="true" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
           <folding>
             <element signature="e#6#88#0#PHP" expanded="true" />
-            <marker date="1500397421777" expanded="true" signature="2082:2274" ph="INSERT INTO tbl_product... " />
+            <marker date="1500399235122" expanded="true" signature="2121:2313" ph="INSERT INTO tbl_product... " />
           </folding>
         </state>
       </provider>
