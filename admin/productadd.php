@@ -1,7 +1,17 @@
 ﻿<?php include 'inc/header.php'; ?>
 <?php include 'inc/sidebar.php'; ?>
+<?php require_once '../classes/Product.php'; ?>
 <?php require_once '../classes/Category.php'; ?>
 <?php require_once '../classes/Brand.php'; ?>
+<?php
+
+$prod = new Product();
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['zapisz'])) {
+
+    $insertProduct = $prod->productInsert($_POST, $_FILES);
+}
+?>
 
 <div class="grid_10">
     <div class="box round first grid">
@@ -9,13 +19,19 @@
         <div class="block">
             <form action="" method="post" enctype="multipart/form-data">
                 <table class="form">
+                    <?php
 
+                        if (isset($insertProduct)) {
+
+                            echo $insertProduct;
+                        }
+                    ?>
                     <tr>
                         <td>
                             <label>Name</label>
                         </td>
                         <td>
-                            <input type="text" name="productId" placeholder="Enter Product Name..." class="medium"/>
+                            <input type="text" name="productName" placeholder="Enter Product Name..." class="medium"/>
                         </td>
                     </tr>
                     <tr>
@@ -99,7 +115,7 @@
                     <tr>
                         <td></td>
                         <td>
-                            <input type="submit" name="submit" Value="Save"/>
+                            <input type="submit" name="zapisz" Value="Save"/>
                         </td>
                     </tr>
                 </table>
