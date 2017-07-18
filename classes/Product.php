@@ -23,6 +23,11 @@ class Product {
         $this->fm = new Format();
     }
 
+    /**
+     * @param $data
+     * @param $file
+     * @return string
+     */
     public function productInsert($data, $file) {
 
         $productName = mysqli_real_escape_string($this->db->link, $data['productName']);
@@ -74,4 +79,15 @@ class Product {
             }
         }
     }
+
+    /**
+     * @return bool
+     */
+    public function getAllProduct() {
+
+        $queryGetAllProducts = "SELECT * FROM tbl_product ORDER BY productId DESC";
+        $result = $this->db->select($queryGetAllProducts);
+        return $result;
+    }
+
 }
